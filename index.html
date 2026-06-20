@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人之兒女，鬼之兒女</title>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+        iframe { border: none; width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
+    <!-- 自動將你的 project.json 帶入編輯器的播放器中 -->
+    <script>
+        const currentUrl = window.location.href.replace('index.html', '');
+        const jsonUrl = encodeURIComponent(currentUrl + 'project.json');
+        document.body.innerHTML = `<iframe src="https://asyray951223-web.github.io/Text-Adventure-Engine-pro/index.html?project=${jsonUrl}"></iframe>`;
+    </script>
+</body>
+</html>
